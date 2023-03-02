@@ -1,0 +1,22 @@
+import tkinter as tk
+from tkinter import *
+from tkinter import ttk
+
+root = tk.Tk()
+root.geometry('400x300')
+root.resizable(True, True)
+root.title('Button Demo')
+
+exit_Button = ttk.Button(
+    root,
+    text="Exit",
+    command = lambda: root.quit()
+)
+
+exit_Button.pack(
+    ipadx = 5,
+    ipady = 5,
+    expand = True
+)
+
+root.mainloop()
